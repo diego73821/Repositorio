@@ -1,0 +1,146 @@
+:root {
+    --tipografia-facebook: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    --color-azul-facebook: #1877f2;
+    --color-verde-facebook: #42b72a;
+    --color-gris-facebook: #f0f2f5;
+    --color-blanco: #ffffff;
+    --color-negro: #000;
+    --color-azul-facebook-hover: #166fe5;
+    --color-gris-footer: #737373;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    width: 1519px;
+    height: 720px;
+    background-color: var(--color-gris-facebook);
+}
+
+.seccion-1 {
+    margin-left: 30%;
+    margin-top: 112px;
+}
+
+.div-logo-facebook {
+    padding: 112px 0 16px;
+}
+
+.logo-facebook {
+    height: 106px;
+    margin: -28px;
+}
+
+/*COPIA*/
+.h2 {
+    font-family: var(--tipografia-facebook);
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 32px;
+    width: 500px;
+}
+
+/*COPIA*/
+.seccion-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    box-sizing: border-box;
+    margin: 142px 0 0;
+    padding: 20px 0 28px;
+    width: 396px;
+    height: 316px;
+}
+
+.input-correo{
+    font-size: 17px;
+    padding: 14px 16px;
+    width: 330px;
+    border-radius: 6px;
+    border: 1px solid #dddfe2;
+}
+
+.input-contraseña{
+    font-size: 17px;
+    padding: 14px 16px;
+    width: 330px;
+    border-radius: 6px;
+    border: 1px solid #dddfe2;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.btn-inicio-sesion {
+    width: 332px;
+    height: 48px;
+    background-color: var(--color-azul-facebook);
+    color: var(--color-blanco);
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-radius: 6px;
+    border: none;
+    transition: all 200ms;
+    align-items: center;
+
+}
+
+.btn-inicio-sesion:hover {
+    background-color: var(--color-azul-facebook-hover);
+}
+
+.btn-crear-cuenta{
+    background-color: var(--color-verde-facebook);
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    line-height: 48px;
+    padding: 0 16px;
+    color: white;
+    width: 189px;
+    height: 48px;
+}
+
+.crear-pagina{
+    margin-right: 50%;
+    text-align: center;
+}
+
+ul {
+    display: flex;
+    margin-bottom: 5px;
+    margin: 5px;
+}
+ul li {
+    list-style: none;
+    margin-right: 30px;
+    color: var(--color-gris-footer);
+    font-size: 12px;
+}
+
+li a {
+    color: var(--color-gris-footer);
+    width: auto;
+    height: auto;
+    font-size: 12px;
+}
+
+.footer{
+    margin-left: 20%;
+    margin-top: 30px;
+}
