@@ -15,7 +15,7 @@ consumo1.then(res => res.json())
                             <img src="${sprites.front_default}" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">${name}</h5>
-                                <p class="card-text">${pokemon_api_todos.species}</p>
+                                <p class="card-text"></p>
                             </div>
                         </div>
                     </div>
