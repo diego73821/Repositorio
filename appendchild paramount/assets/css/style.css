@@ -1,28 +1,66 @@
-.fondo1{
+.fondo1 {
     background-image: url("https://wwwimage-intl.pplusstatic.com/thumbnails/photos/w1920-q80/cbs_page_attribute/latam_upsell_hero1_weblandscape_2560x960_050422.jpg");
 }
 
-.nav{
+.titulo1, .titulo2, .titulo3, .titulo4{
+    font-size: 400%;
+    font-weight:900;
+}
+
+.btn1, .btn2, .btn3{
+    padding: 4%;
+}
+
+.div1 {
+    width: 30%;
+    padding-bottom: 5%;
+}
+
+.fondo2 {
+    background-image: url("https://wwwimage-intl.pplusstatic.com/thumbnails/photos/w1920-q80/cbs_page_attribute/uk_ie_upsell_hero2_weblandscape_2560x960_060922_1.jpg");
 
 }
 
-.logo{
-    margin-left: 8%
+.carousel1, .carousel2{
+    margin-top: 5%;
+    padding-bottom: 5%;
+    width: 13%;
+    height: 13%;
+
 }
 
-.texto1{
+.fondo3{
+    background-image: url("https://wwwimage-intl.pplusstatic.com/thumbnails/photos/w1920-q80/cbs_page_attribute/16/52/image_2843f892-4464-4923-841c-7b424751fdf4.jpg");
+}
+
+.fondo4{
+    background-image: url("https://wwwimage-intl.pplusstatic.com/thumbnails/photos/w1920-q80/cbs_page_attribute/16/54/image_e46fd8a5-07e2-4a0f-93ef-9b5eaa27001c.jpg");
+}
+
+.div2{
+    margin-top: 2%;
+    margin-bottom: 18%;
     width: 35%;
-    font-size: 300%;
 }
 
-.texto2{
-    width: 20%;
-}
-
-.div1{
+.texto4{
     width: 30%;
 }
 
-.btn1 .btn2 .btn3{
-    width: 50%;
+li{
+    list-style: none;
+    font-size: 12px;
 }
+
+ul{
+    padding: 0;
+    padding-right: 5%;
+    padding-bottom: 5%;
+}
+
+footer{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+
