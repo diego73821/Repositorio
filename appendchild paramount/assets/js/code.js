@@ -1,4 +1,60 @@
+window.addEventListener('scroll', () => {
+    if (window.scrollY >= 100) {
+        spanDiv.style.display = 'none'
+    }
+    else {
+        spanDiv.style.display = 'block'
+        
+    }
+
+    if(window.scrollY >= 400){
+        btnNav.classList.remove("d-none")
+    }
+    else{
+        btnNav.classList.add("d-none")
+    }
+})
+
 let bodyPagina = document.querySelector("body")
+
+//NAVBAR
+
+let navbar = document.createElement("nav")
+navbar.className = "navbar fixed-top text-white"
+bodyPagina.appendChild(navbar)
+
+let divNavbar = document.createElement("div")
+divNavbar.className = "container"
+navbar.appendChild(divNavbar)
+
+let logoNavbar = document.createElement("img")
+logoNavbar.src = './assets/img/logo.svg'
+divNavbar.appendChild(logoNavbar)
+
+let spanDiv = document.createElement("span")
+spanDiv.className = "spanNavbar"
+divNavbar.appendChild(spanDiv)
+
+let span1 = document.createElement("span")
+span1.className = "ps-5"
+span1.innerText = "HALO: "
+spanDiv.appendChild(span1)
+
+let b = document.createElement("b")
+b.innerText = "VER AHORA"
+spanDiv.appendChild(b)
+
+var btnNav = document.createElement("button")
+// btnNav.className = "d-none btnNav btn btn-primary"
+btnNav.classList.add("d-none", "btnNav", "btn", "btn-primary")
+btnNav.innerHTML = "SUSCRÍBETE A PARAMOUNT+"
+divNavbar.appendChild(btnNav)
+
+let span2 = document.createElement("span")
+span2.innerText = "INICIAR SESION"
+divNavbar.appendChild(span2)
+
+//SECCION1
 
 let seccion1 = document.createElement("section")
 seccion1.className = "fondo1"
@@ -7,15 +63,6 @@ bodyPagina.appendChild(seccion1)
 let divGeneral = document.createElement("div")
 divGeneral.className = "container"
 seccion1.appendChild(divGeneral)
-
-let navbar = document.createElement("nav")
-navbar.className = "nav"
-divGeneral.appendChild(navbar)
-
-let logo = document.createElement("img")
-logo.className = "logo"
-logo.src = './assets/img/logo.svg'
-navbar.appendChild(logo)
 
 let titulo1 = document.createElement("h2")
 titulo1.className = "titulo1 text-white pt-5"
@@ -115,7 +162,7 @@ divCarrusel2.appendChild(divImagenesCarrusel2)
 
 var contadorCarrusel1 = 1
 
-while (contadorCarrusel1 <= 8) {
+while (contadorCarrusel1 <= 7) {
     let imagenesCarrusel1 = document.createElement("img")
     imagenesCarrusel1.src = `./assets/img/carrusel2/${contadorCarrusel1}.jpg`
     imagenesCarrusel1.className = "w-100 pe-2"
@@ -162,6 +209,83 @@ btn3.className = "btn3 btn btn-outline-light"
 btn3.innerHTML = "INICIA SESIÓN CON TU PROVEEDOR"
 divBotones2.appendChild(btn3)
 
+//SECCION 5
 
+let footer = document.createElement("footer")
+footer.className = "bg-black text-muted"
+bodyPagina.appendChild(footer)
 
+let divGeneral5 = document.createElement("div")
+divGeneral5.className = "container"
+footer.appendChild(divGeneral5)
 
+let logoFooter = document.createElement("img")
+logoFooter.className = "pb-4"
+logoFooter.src = './assets/img/logo.svg'
+divGeneral5.appendChild(logoFooter)
+
+let divFooter = document.createElement("div")
+divFooter.className = "d-flex"
+divGeneral5.appendChild(divFooter)
+
+//UL´S LI´S
+
+let ul1 = document.createElement("ul")
+divFooter.appendChild(ul1)
+
+let li1_1 = document.createElement("li")
+li1_1.className = "h6"
+li1_1.innerText = "Navegación del sitio"
+ul1.appendChild(li1_1)
+
+let li1_2 = document.createElement("li")
+li1_2.innerText = "Paramount+ Colombia"
+ul1.appendChild(li1_2)
+
+let li1_3 = document.createElement("li")
+li1_3.innerText = "aramount+ Global"
+ul1.appendChild(li1_3)
+
+let ul2 = document.createElement("ul")
+divFooter.appendChild(ul2)
+
+let li2_1 = document.createElement("li")
+li2_1.className = "h6"
+li2_1.innerText = "Privacidad y términos"
+ul2.appendChild(li2_1)
+
+let li2_2 = document.createElement("li")
+li2_2.innerText = "Acuerdo de Suscripción"
+ul2.appendChild(li2_2)
+
+let li2_3 = document.createElement("li")
+li2_3.innerText = "Términos de Uso"
+ul2.appendChild(li2_3)
+
+let li2_4 = document.createElement("li")
+li2_4.innerText = "Política de privacidad y Política"
+ul2.appendChild(li2_4)
+
+let li2_5 = document.createElement("li")
+li2_5.innerText = "Política de cookies"
+ul2.appendChild(li2_5)
+
+let ul3 = document.createElement("ul")
+divFooter.appendChild(ul3)
+
+let li3_1 = document.createElement("li")
+li3_1.className = "h6"
+li3_1.innerText = "Soporte"
+ul3.appendChild(li3_1)
+
+let li3_2 = document.createElement("li")
+li3_2.innerText = "Ayuda / Contáctanos"
+ul3.appendChild(li3_2)
+
+let li3_3 = document.createElement("li")
+li3_3.innerText = "Guia de clasificaciones"
+ul3.appendChild(li3_3)
+
+let derechos = document.createElement("span")
+derechos.innerText = "© 2022 Paramount. Todos los derechos reservados."
+divGeneral5.appendChild(derechos)
